@@ -18,16 +18,17 @@ body {
 #community {
   display: grid;
   margin-top: 12%;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 25%;
+  margin-right: 25%;
   grid-template-areas: "comm comm"
                         "sub us";
   grid-template-columns: repeat(2, 1fr);
-  box-shadow:  2px 2px var(--lightgray);
+  border-radius: 10px;
+  box-shadow:  2px 1px 3px var(--grayblue);
 }
 
 .community {
-  padding: .8rem 1.5rem;
+  padding: .8rem 2.5rem;
   padding-bottom: 2rem;
   grid-area: comm;
   border-radius: 5px;
@@ -45,8 +46,7 @@ body {
 }
 
 .bottom {
-
-  padding: .8rem 1.5rem;
+  padding: .8rem 2.5rem;
   color: var(--lightgray);
   padding-bottom: 2rem;
 }
@@ -70,6 +70,16 @@ body {
   font-size:  16px;
   opacity: 80%;
 }
+.subscribe button{
+  margin-top: .8rem;
+  margin-left: .6rem;
+  padding: .6rem 4.9rem;
+  background: var(--brightyellow);
+  color: var(--lightgray);
+  border: 1px solid var(--brightyellow);
+  border-radius: 5px;
+  box-shadow: 2px 1px 3px var(--grayblue);
+}
 
 .why-us{
   line-height: 1.3;
@@ -79,9 +89,41 @@ body {
 }
 
 
+@media (max-width:375px) {
+  #community{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .community{
+    border-radius: 5px 5px 0 0;
+  }
+  .subscribe{
+    border-radius: 0px;
+  }
+  .why-us{
+    border-radius: 0 0 5px 5px;
+  }
+}
 
-
-
+@media (max-width:640px){
+  #community{
+    margin-left: 10%;
+    margin-right: 15%;
+  }
+  .subscribe button{
+    margin-left: 0;
+    padding: .6rem 2.4rem;
+  }
+}
+@media (max-width:1104px){
+  .subscribe button{
+    margin-left: 0;
+    padding: .6rem 4.4rem;
+  }
+}
 
 
 
