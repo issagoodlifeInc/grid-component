@@ -70,7 +70,8 @@ body {
   font-size:  16px;
   opacity: 80%;
 }
-.subscribe button{
+.subscribe a{
+  text-decoration: none;
   margin-top: .8rem;
   margin-left: .6rem;
   padding: .6rem 4.9rem;
@@ -86,6 +87,10 @@ body {
   background: var(--cyan);
   grid-area: us;
   border-radius: 0px 0px 5px 0px;
+}
+.why-us ul{
+  padding-left: 0;
+  list-style-type: none;
 }
 
 
@@ -116,6 +121,18 @@ body {
   .subscribe button{
     margin-left: 0;
     padding: .6rem 2.4rem;
+  }
+}
+@media (max-width:596px) {
+  #community{
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe{
+    border-radius: 0;
+  }
+  .why-us{
+    border-radius: 0 0 5px 5px;
   }
 }
 @media (max-width:1104px){
