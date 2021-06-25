@@ -88,6 +88,9 @@ body {
   background-color: var(--brightyellow);
   border-radius: 5px;
 }
+.subscribe a:hover{
+  background-color: hsl(71, 73%, 44%);
+}
 .why-us{
   padding: 2.2rem 2.2rem;
   background-color: var(--cyan);
@@ -118,9 +121,6 @@ body {
     font-size: .9rem;
   }
 }
-
-
-
 
 .attribution {
   font-size: 11px;
